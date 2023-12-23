@@ -4,7 +4,8 @@ public class Invoice {
 
 	private Double basicPayment;
 	private Double tax;
-		
+	private Double totalPayment;
+	
 	public Invoice() {
 		
 	}
@@ -33,4 +34,16 @@ public class Invoice {
 	public Double getTax() {
 		return tax;
 	}
+
+
+	public double getTotalPayment() {
+		return getBasicPayment() + getTax();
+
+	}
+
+
+	
+	
+	
+	
 }
